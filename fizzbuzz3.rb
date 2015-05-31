@@ -12,22 +12,18 @@ class FizzBuzz
   end
 
   def fizz?(n)
-    fizz_number = 0
-    while n > fizz_number
-      fizz_number += 3
-      if fizz_number == n
-        return true
-        break
-      end
-    end
-    return false
+    fizzbuzz_check(n, 3)
   end
 
   def buzz?(n) 
-    buzz_number = 0
-    while n > buzz_number
-      buzz_number += 5
-      if buzz_number == n
+    fizzbuzz_check(n, 5)
+  end
+
+  def fizzbuzz_check(n ,fizzbuzz)
+    fizzbuzz_number = 0
+    while n > fizzbuzz_number 
+      fizzbuzz_number += fizzbuzz
+      if fizzbuzz_number == n
         return true
         break
       end
