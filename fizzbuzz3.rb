@@ -37,8 +37,3 @@ class FizzBuzz
 
 end
 
-hoge = FizzBuzz.new
-hoge.say(3)
-hoge.say(5)
-hoge.say(15)
-hoge.say(150)
